@@ -61,7 +61,7 @@ Give a verdict, blockers, warnings, and launch-safe defaults, each pointing to t
 ## Output format
 
 ```text
-Deliverability audit: {pass / caution / blocked}
+Deliverability audit: {ready, caution or blocked}
 
 From ACA: {mailboxes count, sequences reviewed, list reviewed}
 From the user: {pasted rates, mailbox states, DNS records}
