@@ -15,7 +15,7 @@ claude plugin marketplace add Automated-Client-Acquisition/plugins
 claude plugin install automated-client-acquisition@sartoux
 ```
 
-**Codex:** `codex plugin marketplace add Automated-Client-Acquisition/plugins`, then install **ACA**.
+**Codex:** `codex plugin marketplace add Automated-Client-Acquisition/plugins`, then install **Automated Client Acquisition**.
 
 **Grok Build:** `/plugins` → Marketplace → add `Automated-Client-Acquisition/plugins` → **automated-client-acquisition**.
 

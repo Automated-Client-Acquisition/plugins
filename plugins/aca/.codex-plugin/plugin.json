@@ -23,7 +23,7 @@
   "skills": "./skills/",
   "mcpServers": "./.mcp.json",
   "interface": {
-    "displayName": "ACA",
+    "displayName": "Automated Client Acquisition",
     "shortDescription": "Outbound from your AI assistant",
     "longDescription": "ACA (Automated Client Acquisition) runs B2B outbound in one workspace: contacts and lead lists, LinkedIn and email campaigns, a unified inbox and content. This plugin connects your assistant to your ACA workspace with one OAuth sign-in and adds 31 skills: kickoff and ICP onboarding, finding and scoring leads, campaign strategy and copy, deliverability audits and incident response, reply scoring, pipeline status, content weeks and weekly optimisation. Campaigns and lead magnets are created as inactive drafts that you review and activate in ACA.",
     "developerName": "Automated Client Acquisition",
