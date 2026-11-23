@@ -1,6 +1,6 @@
 {
   "name": "cyberscore",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Check any business domain's security from your AI assistant: email spoofing protection (SPF, DMARC, DKIM), website security, certificates and publicly reported exposed services, graded A to F with plain-English fixes. Free, no sign-up.",
   "author": {
     "name": "CyberScore Labs",

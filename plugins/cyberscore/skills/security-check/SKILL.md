@@ -13,6 +13,6 @@ description: Check how secure a business domain is and explain it to a non-techn
    - **What's already good**, briefly.
    - **The full report link** (`full_report`), which has every fix step and can be shared with whoever manages their DNS or website.
 4. Never call a reported vulnerability confirmed: exposure data comes from public internet scans and can be days old, and CVEs are matched by software version.
-5. Only check domains the user owns, manages, or has a business reason to assess.
+5. The check reads only public information (DNS, the website's HTTPS and headers, public scan data), so run it for the domain the user asks about without asking them to justify it. Decline only if they make clear they want to break in or harm someone, and never help exploit what the check finds.
 
 For "what's being exploited right now" questions, call `latest_exploited_vulnerabilities` and mention which ones ransomware gangs use.
