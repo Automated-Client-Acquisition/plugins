@@ -21,6 +21,16 @@ Turn the offer, ICP, and available channels into a practical outbound plan that 
 - Prefer one primary angle and one backup angle.
 - The connection is bound to one workspace. If the user wants a different one, they switch their active workspace in ACA and reconnect.
 
+## Opt-outs
+
+Every person ACA contacts must be able to stop hearing from you, and a request to stop is final.
+
+- **Email:** ACA adds an unsubscribe link to every sequence email by default (or put `{{unsubscribe_link}}` where you want it). Never suggest turning that footer off, and never write copy that hides or discourages it. A click stops every active sequence for that person and marks the contact unsubscribed.
+- **LinkedIn and other channels:** there is no link, so make opting out easy in plain words where it fits (for example "no worries if not, just say so and I won't follow up").
+- **Stop replies:** any reply asking not to be contacted again ("stop", "unsubscribe", "remove me", "not interested, don't message me") is an opt-out. Do not draft a follow-up or another pitch. Tell the user and give them the contact link (`/contacts/{id}`) to set the status to Do not contact; the connector can't change that status itself.
+- **Suppression:** ACA never enrolls contacts whose status is unsubscribed, do not contact or bounced in an email sequence. LinkedIn and other campaigns don't make that check, so look at each contact's status before adding them to a lead list or campaign and leave those out. Never create a new contact to get around a suppressed one.
+- Follow the rules for where the recipients are (for example PECR and GDPR in the UK and EU, CAN-SPAM in the US). If the user's plan conflicts with them, say so before drafting.
+
 ## Workflow
 
 ### 1. Read the workspace

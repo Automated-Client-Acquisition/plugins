@@ -11,8 +11,8 @@
     {
       "name": "automated-client-acquisition",
       "source": "./plugins/aca",
-      "description": "Run cold email, LinkedIn outreach and lead generation from your AI assistant. Define your ICP, build lead lists, launch campaigns, check deliverability, triage replies and create content in your ACA workspace. One sign-in, no API keys.",
-      "version": "2.0.2",
+      "description": "Run cold email, LinkedIn outreach and lead generation from your AI assistant. Define your ICP, build lead lists, launch campaigns, check deliverability, triage replies and create content in your ACA workspace. One sign-in, no API keys. Email sequences carry an unsubscribe link by default, and the skills treat every request to stop as final.",
+      "version": "2.0.3",
       "category": "productivity",
       "tags": [
         "ACA"

@@ -21,6 +21,14 @@ claude plugin install automated-client-acquisition@sartoux
 
 **Claude, ChatGPT or Grok on the web:** add the connector URL `https://mcp.automatedclientacquisition.com/mcp`. Step-by-step: [automatedclientacquisition.com/mcp](https://www.automatedclientacquisition.com/mcp).
 
+## Opt-outs
+
+Everyone you reach through ACA can stop hearing from you:
+
+- **Email:** every sequence email carries an unsubscribe link by default. One click stops all of that person's sequences and marks them unsubscribed, and ACA never enrolls unsubscribed, do-not-contact or bounced contacts in a sequence again.
+- **Replies:** the skills treat any request to stop as final. Claude won't draft a follow-up, and it gives you the contact link to mark them Do not contact.
+- **Lead lists and campaigns:** the skills leave suppressed contacts out and never recreate them to get around an opt-out.
+
 ## What it runs, and what it sends
 
 The plugin contains Markdown skills and one remote connector setting. It runs no code on your computer. Your assistant talks to ACA's hosted server at `https://mcp.automatedclientacquisition.com/mcp` after you sign in to ACA and approve access. No credentials are stored in the plugin.
