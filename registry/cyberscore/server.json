@@ -1,0 +1,19 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.cyberscorelab.www/cyberscore",
+  "title": "CyberScore",
+  "description": "Grade any domain's security A to F with plain-English fixes, and list exploited CVEs. Free.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.cyberscorelab.com/ai",
+  "repository": {
+    "url": "https://github.com/Automated-Client-Acquisition/plugins",
+    "source": "github",
+    "subfolder": "plugins/cyberscore"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.cyberscorelab.com/api/mcp"
+    }
+  ]
+}

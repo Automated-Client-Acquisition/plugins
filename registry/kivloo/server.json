@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.Automated-Client-Acquisition/kivloo",
+  "title": "Kivloo",
+  "description": "Food safety and workplace compliance: HACCP plans, SOPs, checklists, inspections and lot tracing.",
+  "version": "0.1.0",
+  "websiteUrl": "https://kivloo.com/ai-agents",
+  "repository": {
+    "url": "https://github.com/Automated-Client-Acquisition/kivloo-plugins",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://kivloo.com/api/mcp"
+    }
+  ]
+}

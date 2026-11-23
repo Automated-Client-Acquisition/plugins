@@ -1,0 +1,23 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.automatedclientacquisition.www/aca",
+  "title": "ACA (Automated Client Acquisition)",
+  "description": "B2B outbound from your AI: campaigns, replies, CRM, lead lists and draft LinkedIn campaigns.",
+  "version": "1.6.1",
+  "websiteUrl": "https://www.automatedclientacquisition.com/mcp",
+  "icons": [
+    {
+      "src": "https://www.automatedclientacquisition.com/favicon.svg",
+      "mimeType": "image/svg+xml",
+      "sizes": [
+        "any"
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.automatedclientacquisition.com/mcp"
+    }
+  ]
+}
