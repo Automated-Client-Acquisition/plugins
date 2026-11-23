@@ -1,12 +1,12 @@
 ---
 name: security-check
-description: Check how secure a business domain is and explain it to a non-technical owner. Use when someone asks "how secure is <domain>", "can people spoof my email", "is my website safe", "check my DMARC/SPF", or wants a security review of a company before working with it.
+description: Check how secure a business domain is and explain it to a non-technical owner. Use when someone asks "how secure is <domain>", "can people spoof my email", "can someone send email pretending to be <domain>", "is my website safe", "check my DMARC/SPF/DKIM", "is my SSL certificate OK", or wants a security review of a company before working with it.
 ---
 
 # Domain security check
 
 1. Get the domain (e.g. `acme.com`). If the user gives a URL or an email address, use the part after `@` or the host name.
-2. Call `check_domain_security` with it. It takes up to 30 seconds.
+2. Call `check_domain_security` with it. It takes up to 30 seconds. Answer from the check's results for that domain, not from general knowledge: an email-spoofing question is answered from its SPF, DMARC and DKIM findings, a website question from its HTTPS and header findings.
 3. Answer in this order:
    - **The grade and score**, in one sentence.
    - **What to fix first**: each critical problem, then warnings, in plain words. Say what could happen ("anyone can send email that looks like it's from you"), how long the fix takes, and the fix itself. Keep DNS records and config snippets exactly as returned.
