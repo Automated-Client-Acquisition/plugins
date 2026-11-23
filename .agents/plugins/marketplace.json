@@ -5,7 +5,7 @@
   },
   "plugins": [
     {
-      "name": "aca",
+      "name": "automated-client-acquisition",
       "source": {
         "source": "local",
         "path": "./plugins/aca"

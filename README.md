@@ -23,7 +23,7 @@ B2B outbound: leads, LinkedIn and email campaigns, inbox, content. [automatedcli
 
 | Plugin | What it does | Install (Claude Code) |
 |---|---|---|
-| [`aca`](plugins/aca) | Run outbound from your assistant: find and score leads, draft campaigns, check deliverability, triage replies, plan content. 31 skills + the ACA connector (OAuth). | `claude plugin install aca@sartoux` |
+| [`automated-client-acquisition`](plugins/aca) | Run outbound from your assistant: find and score leads, draft campaigns, check deliverability, triage replies, plan content. 31 skills + the ACA connector (OAuth). | `claude plugin install automated-client-acquisition@sartoux` |
 | [`aca-outbound-domain-sites`](plugins/aca-outbound-domain-sites) | Add-on: give every cold-email sending domain its own landing page, deployed and DNS-pointed without breaking mail. | `claude plugin install aca-outbound-domain-sites@sartoux` |
 
 ### Kivloo

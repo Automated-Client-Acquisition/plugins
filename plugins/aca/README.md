@@ -12,12 +12,12 @@
 
 ```bash
 claude plugin marketplace add Automated-Client-Acquisition/plugins
-claude plugin install aca@sartoux
+claude plugin install automated-client-acquisition@sartoux
 ```
 
 **Codex:** `codex plugin marketplace add Automated-Client-Acquisition/plugins`, then install **ACA**.
 
-**Grok Build:** `/plugins` → Marketplace → add `Automated-Client-Acquisition/plugins` → **aca**.
+**Grok Build:** `/plugins` → Marketplace → add `Automated-Client-Acquisition/plugins` → **automated-client-acquisition**.
 
 **Claude, ChatGPT or Grok on the web:** add the connector URL `https://mcp.automatedclientacquisition.com/mcp`. Step-by-step: [automatedclientacquisition.com/mcp](https://www.automatedclientacquisition.com/mcp).
 

@@ -9,10 +9,10 @@
   },
   "plugins": [
     {
-      "name": "aca",
+      "name": "automated-client-acquisition",
       "source": "./plugins/aca",
       "description": "Run cold email, LinkedIn outreach and lead generation from your AI assistant. Define your ICP, build lead lists, launch campaigns, check deliverability, triage replies and create content in your ACA workspace. One sign-in, no API keys.",
-      "version": "2.0.1",
+      "version": "2.0.2",
       "category": "productivity",
       "tags": [
         "ACA"
