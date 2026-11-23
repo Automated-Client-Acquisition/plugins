@@ -1,0 +1,56 @@
+{
+  "name": "sartoux",
+  "interface": {
+    "displayName": "Sartoux Group"
+  },
+  "plugins": [
+    {
+      "name": "aca",
+      "source": {
+        "source": "local",
+        "path": "./plugins/aca"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "aca-outbound-domain-sites",
+      "source": {
+        "source": "local",
+        "path": "./plugins/aca-outbound-domain-sites"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "kivloo",
+      "source": {
+        "source": "local",
+        "path": "./plugins/kivloo"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "cyberscore",
+      "source": {
+        "source": "local",
+        "path": "./plugins/cyberscore"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Security"
+    }
+  ]
+}

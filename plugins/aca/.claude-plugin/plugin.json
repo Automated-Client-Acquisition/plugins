@@ -1,0 +1,29 @@
+{
+  "name": "aca",
+  "version": "2.0.0",
+  "description": "Run cold email, LinkedIn outreach and lead generation from your AI assistant. Define your ICP, build lead lists, launch campaigns, check deliverability, triage replies and create content in your ACA workspace. One sign-in, no API keys.",
+  "author": {
+    "name": "Automated Client Acquisition",
+    "email": "support@automatedclientacquisition.com",
+    "url": "https://www.automatedclientacquisition.com"
+  },
+  "homepage": "https://www.automatedclientacquisition.com/mcp",
+  "repository": "https://github.com/Automated-Client-Acquisition/plugins",
+  "license": "MIT",
+  "keywords": [
+    "aca",
+    "cold-email",
+    "outbound",
+    "lead-generation",
+    "linkedin-outreach",
+    "prospecting",
+    "deliverability",
+    "email-sequences"
+  ],
+  "displayName": "ACA (Automated Client Acquisition)",
+  "icon": "./assets/logo.png",
+  "documentationUrl": "https://www.automatedclientacquisition.com/mcp",
+  "supportUrl": "https://www.automatedclientacquisition.com/support",
+  "privacyPolicyUrl": "https://www.automatedclientacquisition.com/privacy",
+  "termsOfServiceUrl": "https://www.automatedclientacquisition.com/terms"
+}

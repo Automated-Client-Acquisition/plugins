@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "cyberscore": {
+      "type": "http",
+      "url": "https://www.cyberscorelab.com/api/mcp"
+    }
+  }
+}

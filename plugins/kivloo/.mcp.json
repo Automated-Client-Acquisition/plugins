@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "kivloo": {
+      "type": "http",
+      "url": "https://kivloo.com/api/mcp"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "aca-outbound-domain-sites",
+  "version": "1.0.0",
+  "description": "Turn bare cold-email sending domains into real, distinct landing pages — built, deployed and DNS-pointed without breaking mail.",
+  "author": {
+    "name": "Automated Client Acquisition",
+    "email": "support@automatedclientacquisition.com",
+    "url": "https://www.automatedclientacquisition.com"
+  },
+  "homepage": "https://www.automatedclientacquisition.com",
+  "repository": "https://github.com/Automated-Client-Acquisition/plugins",
+  "license": "MIT",
+  "keywords": [
+    "cold-email",
+    "deliverability",
+    "landing-pages",
+    "dns",
+    "vercel",
+    "outbound"
+  ]
+}

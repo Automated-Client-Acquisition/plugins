@@ -1,0 +1,56 @@
+{
+  "name": "sartoux",
+  "owner": {
+    "name": "Sartoux Group",
+    "url": "https://github.com/Automated-Client-Acquisition"
+  },
+  "metadata": {
+    "description": "Plugins for ACA, Kivloo and CyberScore, for Claude Code, Codex and Grok Build."
+  },
+  "plugins": [
+    {
+      "name": "aca",
+      "source": "./plugins/aca",
+      "description": "Run cold email, LinkedIn outreach and lead generation from your AI assistant. Define your ICP, build lead lists, launch campaigns, check deliverability, triage replies and create content in your ACA workspace. One sign-in, no API keys.",
+      "version": "2.0.0",
+      "category": "productivity",
+      "tags": [
+        "ACA"
+      ],
+      "homepage": "https://www.automatedclientacquisition.com/mcp"
+    },
+    {
+      "name": "aca-outbound-domain-sites",
+      "source": "./plugins/aca-outbound-domain-sites",
+      "description": "Turn bare cold-email sending domains into real, distinct landing pages — built, deployed and DNS-pointed without breaking mail.",
+      "version": "1.0.0",
+      "category": "productivity",
+      "tags": [
+        "ACA"
+      ],
+      "homepage": "https://www.automatedclientacquisition.com"
+    },
+    {
+      "name": "kivloo",
+      "source": "./plugins/kivloo",
+      "description": "Draft HACCP plans, SOPs, workplace safety and maritime documents, build compliance checklists, and analyse workplace data with Kivloo.",
+      "version": "0.2.1",
+      "category": "productivity",
+      "tags": [
+        "Kivloo"
+      ],
+      "homepage": "https://kivloo.com/ai-agents"
+    },
+    {
+      "name": "cyberscore",
+      "source": "./plugins/cyberscore",
+      "description": "Check any business domain's security from your AI assistant: email spoofing protection (SPF, DMARC, DKIM), website security, certificates and publicly reported exposed services, graded A to F with plain-English fixes. Free, no sign-up.",
+      "version": "1.0.0",
+      "category": "security",
+      "tags": [
+        "CyberScore"
+      ],
+      "homepage": "https://www.cyberscorelab.com"
+    }
+  ]
+}

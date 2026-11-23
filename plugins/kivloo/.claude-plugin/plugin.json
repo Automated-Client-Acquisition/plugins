@@ -1,0 +1,31 @@
+{
+  "name": "kivloo",
+  "version": "0.2.1",
+  "description": "Draft HACCP plans, SOPs, workplace safety and maritime documents, build compliance checklists, and analyse workplace data with Kivloo.",
+  "author": {
+    "name": "Kivloo",
+    "email": "support@kivloo.com",
+    "url": "https://kivloo.com"
+  },
+  "homepage": "https://kivloo.com/ai-agents",
+  "repository": "https://github.com/Automated-Client-Acquisition/kivloo-plugins",
+  "license": "MIT",
+  "keywords": [
+    "compliance",
+    "food-safety",
+    "fsma",
+    "haccp",
+    "maritime",
+    "operations",
+    "osha",
+    "sop",
+    "traceability",
+    "workplace-safety"
+  ],
+  "displayName": "Kivloo",
+  "icon": "./assets/icon.png",
+  "documentationUrl": "https://kivloo.com/ai-agents",
+  "supportUrl": "https://kivloo.com/contact",
+  "privacyPolicyUrl": "https://kivloo.com/privacy",
+  "termsOfServiceUrl": "https://kivloo.com/terms"
+}

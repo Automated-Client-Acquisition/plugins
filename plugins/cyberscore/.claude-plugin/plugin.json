@@ -1,0 +1,25 @@
+{
+  "name": "cyberscore",
+  "version": "1.0.0",
+  "description": "Check any business domain's security from your AI assistant: email spoofing protection (SPF, DMARC, DKIM), website security, certificates and publicly reported exposed services, graded A to F with plain-English fixes. Free, no sign-up.",
+  "author": {
+    "name": "CyberScore Labs",
+    "url": "https://www.cyberscorelab.com"
+  },
+  "homepage": "https://www.cyberscorelab.com",
+  "license": "MIT",
+  "keywords": [
+    "security",
+    "email-security",
+    "dmarc",
+    "spf",
+    "website-security",
+    "cybersecurity"
+  ],
+  "displayName": "CyberScore",
+  "icon": "./assets/icon.png",
+  "documentationUrl": "https://www.cyberscorelab.com",
+  "supportUrl": "https://www.cyberscorelab.com/contact",
+  "privacyPolicyUrl": "https://www.cyberscorelab.com/privacy",
+  "termsOfServiceUrl": "https://www.cyberscorelab.com/terms"
+}

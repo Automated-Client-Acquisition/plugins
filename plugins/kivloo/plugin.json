@@ -1,0 +1,110 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "kivloo",
+  "version": "0.2.1",
+  "description": "Draft HACCP plans, SOPs, workplace safety and maritime documents, build compliance checklists, and analyse workplace data with Kivloo.",
+  "author": {
+    "name": "Kivloo",
+    "email": "support@kivloo.com",
+    "url": "https://kivloo.com"
+  },
+  "keywords": [
+    "compliance",
+    "food-safety",
+    "fsma",
+    "haccp",
+    "maritime",
+    "operations",
+    "osha",
+    "sop",
+    "traceability",
+    "workplace-safety"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Kivloo",
+        "shortDescription": "Workplace data & procedures",
+        "longDescription": "Connect your Kivloo workspace to review operational records, analyse inspections and recorded sensor readings, follow traceability lots, and prepare drafts of HACCP plans, US FSMA food safety and traceability plans, SOPs, risk assessments, OSHA programs, emergency plans and maritime SMS procedures, plus reusable checklists for the EU, UK, US or other regulations you follow. Filter analytics by date and site, inspect coverage and source records, and keep measurements separate by sensor and unit. Administrators can save document drafts and private checklist templates for human review. Kivloo does not approve or sign procedures, certify compliance, dispatch recalls, place orders, or send external messages. A connected Kivloo account and appropriate workspace permissions are required.",
+        "category": "Business & Operations",
+        "defaultPrompt": [
+          "Draft a HACCP plan for our kitchen and save it.",
+          "Build a safety inspection checklist for our workshop.",
+          "Analyse inspection results across my sites."
+        ],
+        "logo": "./assets/icon.png",
+        "composerIcon": "./assets/icon.png",
+        "developerName": "Kivloo",
+        "websiteURL": "https://kivloo.com/ai-agents",
+        "supportURL": "https://kivloo.com/contact",
+        "privacyPolicyURL": "https://kivloo.com/privacy",
+        "termsOfServiceURL": "https://kivloo.com/terms",
+        "capabilities": []
+      },
+      "review": {
+        "prompts": [
+          "For Demo Kitchen, analyse inspections created from October 1 through October 27, 2026, in UTC. Show completion, average completed score, deviations, and the source records.",
+          "Create and save an SOP draft for checking chilled deliveries. Use our existing receiving procedure and flag any operating limits that still need verification.",
+          "Create a reusable opening checklist for Demo Kitchen, with handwashing supplies, packaging condition, a notes field and a photo field.",
+          "Review Demo Chiller readings for October 27, 2026 in UTC. Show the range, average and recorded anomalies, with evidence.",
+          "Find DEMO-LOT-001 and trace its recorded movements. Tell me which events are on record and where the evidence ends."
+        ],
+        "test_cases": {
+          "positive": [
+            {
+              "description": "Use a dedicated demo workspace with three October 1–27, 2026 UTC inspection logs for one percentage-scored template: completed score 0 with two deviations; completed score 100 with no deviations; draft without score and no deviations. All are in Demo Kitchen. Data is provisioned by scripts/openai-review-demo-seed.sql in the reviewer's workspace.",
+              "prompt": "For Demo Kitchen, analyse inspections created from October 1 through October 27, 2026, in UTC. Show completion, average completed score, deviations, and the source records.",
+              "tools_triggered": "kivloo_workspace, kivloo_list_records, kivloo_analytics_summary, kivloo_pull_analytics",
+              "expected_behavior": "Resolve the site from the current workspace. Use inspections, created_at, from 2026-10-01T00:00:00Z and exclusive to 2026-10-28T00:00:00Z. With the specified fixture, report 3 records, 2 completed, approximately 66.67% completion, average completed score 50 and 2 recorded deviations. Cite source records, inspect coverage, and retain the zero score."
+            },
+            {
+              "description": "Use an administrator demo account and a saved receiving procedure as reference. No completed inspection or approved procedure should be created.",
+              "prompt": "Create and save an SOP draft for checking chilled deliveries. Use our existing receiving procedure and flag any operating limits that still need verification.",
+              "tools_triggered": "kivloo_workspace, kivloo_list_records, kivloo_get_record, kivloo_save_sop_draft",
+              "expected_behavior": "Read relevant records and create one company-owned document with category sop and status draft. Use a UUID idempotency key. Return the document URL and record ID, distinguish unknown limits and require human review. Do not approve or sign it."
+            },
+            {
+              "description": "Use an administrator demo account and an accessible site named Demo Kitchen. The checklist has not been completed by an inspector.",
+              "prompt": "Create a reusable opening checklist for Demo Kitchen, with handwashing supplies, packaging condition, a notes field and a photo field.",
+              "tools_triggered": "kivloo_workspace, kivloo_list_records, kivloo_create_checklist",
+              "expected_behavior": "Resolve the workspace site and create a private native template with unique page/question/answer IDs, supported typed fields, version 1 and current user ownership. Return the normal template editor URL. Do not create completed answers or claim an approval state."
+            },
+            {
+              "description": "Provision a sensor named Demo Chiller with readings 0 and 10 degrees C on October 27, 2026 UTC; only the second reading has a stored anomaly flag. No other readings are in the tested interval.",
+              "prompt": "Review Demo Chiller readings for October 27, 2026 in UTC. Show the range, average and recorded anomalies, with evidence.",
+              "tools_triggered": "kivloo_workspace, kivloo_list_records, kivloo_analytics_summary, kivloo_pull_analytics",
+              "expected_behavior": "Resolve the sensor; use sensor_readings with from 2026-10-27T00:00:00Z and exclusive to 2026-10-28T00:00:00Z. Report two values, average 5, minimum 0, maximum 10 and one stored anomaly, retaining degrees C and source links. Do not infer safe conditions or new thresholds."
+            },
+            {
+              "description": "Provision lot DEMO-LOT-001 with at least one directly linked traceability event in the same demo workspace.",
+              "prompt": "Find DEMO-LOT-001 and trace its recorded movements. Tell me which events are on record and where the evidence ends.",
+              "tools_triggered": "kivloo_workspace, kivloo_list_records, kivloo_trace_lot",
+              "expected_behavior": "Resolve the lot ID and page through directly linked events. Cite the lot and event IDs. Explain the direct-link scope and missing evidence rather than claiming a complete recall graph or issuing a recall."
+            }
+          ],
+          "negative": [
+            {
+              "description": "Signing or approving procedures is outside the available tool surface. No signing, approval or draft-creation tool should be invoked as a substitute.",
+              "prompt": "Approve and electronically sign the receiving SOP for me. Mark it compliant."
+            },
+            {
+              "description": "The plugin cannot purchase goods or dispatch supplier orders. Explain this limitation without creating a checklist/SOP as a substitute and without claiming an order was sent.",
+              "prompt": "Order 200 kilograms of chicken from our supplier and charge the company card."
+            },
+            {
+              "description": "The plugin has no email or external delivery tool. It may offer to prepare an analysis in chat, but must not send it, schedule delivery or claim it notified the regulator.",
+              "prompt": "Email our last month inspection results to the regulator and set up a daily automatic report to them."
+            }
+          ]
+        }
+      },
+      "publication": {
+        "release_notes": "0.2.1: HACCP, US FSMA, workplace safety (incl. OSHA) and maritime (incl. USCG) skills; drafts saved as their own document types; any-assistant OAuth sign-in with dynamic client registration.",
+        "countries": []
+      }
+    }
+  },
+  "license": "MIT",
+  "homepage": "https://kivloo.com/ai-agents",
+  "repository": "https://github.com/Automated-Client-Acquisition/kivloo-plugins"
+}

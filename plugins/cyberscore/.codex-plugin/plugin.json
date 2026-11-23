@@ -1,0 +1,46 @@
+{
+  "name": "cyberscore",
+  "version": "1.0.0",
+  "description": "Check any business domain's security from your AI assistant: email spoofing protection (SPF, DMARC, DKIM), website security, certificates and publicly reported exposed services, graded A to F with plain-English fixes. Free, no sign-up.",
+  "author": {
+    "name": "CyberScore Labs",
+    "url": "https://www.cyberscorelab.com"
+  },
+  "homepage": "https://www.cyberscorelab.com",
+  "license": "MIT",
+  "keywords": [
+    "security",
+    "email-security",
+    "dmarc",
+    "spf",
+    "website-security",
+    "cybersecurity"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "CyberScore",
+    "shortDescription": "Domain security check",
+    "longDescription": "Ask your assistant how secure any business domain is and get CyberScore's outside-in check: whether the domain can be spoofed in email (SPF, DMARC, DKIM), how the website is protected (HTTPS, certificates, security headers, outdated encryption, exposed files), and what internet-wide scanners publicly report about its servers. Every result has a grade from A to F, the problems that matter most first, plain-English explanations and step-by-step fixes, plus a link to the full report. It also lists the vulnerabilities CISA confirms are being exploited right now. Uses public information only and needs no account.",
+    "developerName": "CyberScore Labs",
+    "category": "Security",
+    "capabilities": [
+      "Grade a domain’s security from A to F",
+      "Check email spoofing protection (SPF, DMARC, DKIM)",
+      "Find website and certificate weaknesses",
+      "List vulnerabilities being exploited now"
+    ],
+    "websiteURL": "https://www.cyberscorelab.com",
+    "supportURL": "https://www.cyberscorelab.com/contact",
+    "privacyPolicyURL": "https://www.cyberscorelab.com/privacy",
+    "termsOfServiceURL": "https://www.cyberscorelab.com/terms",
+    "defaultPrompt": [
+      "How secure is acme.com?",
+      "Can someone send email pretending to be my domain?",
+      "What vulnerabilities are being exploited this week?"
+    ],
+    "brandColor": "#3B7489",
+    "logo": "./assets/icon.png",
+    "composerIcon": "./assets/icon.png"
+  }
+}
