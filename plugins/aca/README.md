@@ -21,6 +21,9 @@ claude plugin install automated-client-acquisition@sartoux
 
 **Claude, ChatGPT or Grok on the web:** add the connector URL `https://mcp.automatedclientacquisition.com/mcp`. Step-by-step: [automatedclientacquisition.com/mcp](https://www.automatedclientacquisition.com/mcp).
 
+
+**Cline and other MCP clients:** see [llms-install.md](llms-install.md) for the exact settings entry.
+
 ## Opt-outs
 
 Everyone you reach through ACA can stop hearing from you:

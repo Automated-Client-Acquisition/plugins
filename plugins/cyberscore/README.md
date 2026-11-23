@@ -19,6 +19,9 @@ claude plugin marketplace add Automated-Client-Acquisition/plugins
 claude plugin install cyberscore@sartoux
 ```
 
+
+**Cline and other MCP clients:** see [llms-install.md](llms-install.md) for the exact settings entry.
+
 ## Install
 
 **Claude (web/desktop):** Settings → Connectors → Add custom connector → `https://www.cyberscorelab.com/api/mcp`
