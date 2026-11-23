@@ -42,7 +42,7 @@ Call `get_started` to see whether the workspace has products and ICPs. Brand voi
 
 Call `list_blueprints` (use `active_only: true` when you only want ones that can generate now), then `get_blueprint` on the likely match to confirm its pipeline and purpose.
 
-Connector pipelines: `social_media_post`, `rich_article`, `instagram_carousel`, `image_only`, `ugc_video`, `generative_video_oneshot`, `video_script`, `storyboard_video_longform`.
+Connector pipelines (text only): `rich_article`, `social_media_post` (caption only, no image), `instagram_carousel` (copy on ACA's slide templates) and `video_script`. Image and video generation (`image_only`, `ugc_video`, `generative_video_oneshot`, `storyboard_video_longform`) run only in the ACA app: if the user wants those, link them to the blueprint in ACA instead of starting a job.
 
 - Active blueprint matches: use it.
 - Only an inactive match exists: tell the user to activate it at `/blueprints/{id}`.
